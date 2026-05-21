@@ -1,8 +1,8 @@
 const rabbit = require("amqplib");
 const connection = await rabbit.connect("amqp://localhost");
 const channel = await connection.createChannel();
-await channel.assertQueue();
 const queueName = "task1";
+await channel.assertQueue(queueName, { duration: true });
 const msg = {
   name: "harshit",
 };
