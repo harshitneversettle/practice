@@ -9,7 +9,8 @@ const routingKey = "task1";
 await channel.assertQueue(queueName);
 await channel.assertExchange(exchangeName1, "fanout", { durable: false });
 
-await channel.bindQueue(queueName, exchangeName1, routingKey);
+// await channel.bindQueue(queueName, exchangeName1, routingKey);
+// no need of binding in the sender side 
 
 // await channel.sendToQueue(
 //   queueName,
