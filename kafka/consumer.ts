@@ -1,5 +1,6 @@
 process.env.KAFKAJS_NO_PARTITIONER_WARNING = "1";
 import { Kafka } from "kafkajs";
+
 const kafka = new Kafka({
   clientId: "new_app",
   brokers: ["localhost:9092"],
