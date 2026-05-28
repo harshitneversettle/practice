@@ -4,6 +4,7 @@ process.env.KAFKAJS_NO_PARTITIONER_WARNING = "1";
 
 // pass consumer name as CLI arg: bun consumer-group.ts C1
 const consumerName = process.argv[2] ?? "C1";
+// ex : bun consumer.ts C1
 
 const kafka = new Kafka({
   clientId: `consumer-${consumerName}`,
