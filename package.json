@@ -5,14 +5,19 @@
   "private": true,
   "devDependencies": {
     "@types/amqplib": "^0.10.8",
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/cors": "^2.8.19"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
+    "@types/express": "^5.0.6",
     "@types/kafkajs": "^1.9.0",
+    "@types/ws": "^8.18.1",
     "amqplib": "^2.0.1",
+    "axios": "^1.16.1",
+    "cors": "^2.8.6",
     "express": "^5.2.1",
     "kafkajs": "^2.2.4",
     "redis": "^5.12.1"
